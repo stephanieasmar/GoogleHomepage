@@ -3,12 +3,16 @@
     <head>
         <title>Doggle.com</title>
         <style>
+
+        html {
+            box-sizing: border-box;
+        }
         
         #logo {
             display: inline-flex;
             float: center;
-            margin-top: 100px;
-            margin-right: 400px;
+            margin-top: 150px;
+            /*margin-right: 350px;*/
             margin-left: 400px;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 500%;
@@ -16,13 +20,13 @@
         }
 
         #rectangle {
-	        width: 275px;
+	        width: 400px;
 	        height: 35px;
-            margin-right: 400px;
-            margin-left: 400px;
+            margin-left: 350px;
             border: 1px;
             border-style: solid;
             border-color: slategrey;
+            box-shadow: 2px 2px slategray; 
         }
 	
         #rectangle p {
@@ -30,23 +34,37 @@
             float: center;
             display: block;
             margin: 10px;
-            /*box-shadow: 2px 2px;*/
         }
 
         #logo p {
             margin: 0;
-            margin-bottom: 25px;
-
+            margin-bottom: 20px;
         }
+
+        .button {
+            margin-left: 425px;
+            margin-top: 10px;
+        }
+
         </style>
 
     </head>
     <body>
+        <header>
+
+            
+
+
+        </header>
         <div id="logo">
             <p>D<span style="color:red">o<span style="color: yellow">g<span style="color:green">g<span style="color:orange">l<span style="color:purple">e</p>
         </div>
         <div id="rectangle">
             <p>&nbsp;Enter Search Terms Here</p>
+        </div>
+        <div class="button">
+            <button>Doggle Search</button>
+            <button>Feeling Heckin' Lucky!</button>
         </div>
 
     </body>
